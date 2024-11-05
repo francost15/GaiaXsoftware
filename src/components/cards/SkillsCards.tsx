@@ -14,7 +14,7 @@ export const SkillsCards = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {skills.map(({ icon: Icon, label, color }, index) => (
         <motion.div 
-          key={label} 
+          key={label}
           initial={{ opacity: 0, scale: 0.9 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.3, delay: 0.1 * index }}
@@ -22,7 +22,7 @@ export const SkillsCards = () => {
           whileTap={{ scale: 0.95 }}
         >
           <Button variant="outline" className={`h-24 w-full flex-col bg-gradient-to-br ${color} text-white hover:shadow-lg transition-all duration-300`}>
-            <Icon className="h-8 w-8 mb-2" />
+            <Icon className="h-8 w-8 mb-2 text-white" />
             {label}
           </Button>
         </motion.div>

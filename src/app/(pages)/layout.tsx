@@ -1,4 +1,5 @@
-import { SideBar } from "@/components";
+
+import { Sidebar } from "@/components";
 import type { Metadata } from "next";
 
 
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <body className="flex h-screen">
-      <SideBar /> {/* Sidebar en la parte izquierda */}
+      <Sidebar /> {/* Barra lateral */}
       <main className="flex-1 overflow-auto">{children}</main> {/* Contenido principal */}
     </body>
   </html>

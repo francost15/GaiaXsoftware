@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className="flex h-screen">
+    <body className="">
       <main>{children}</main> {/* Contenido principal */}
     </body>
   </html>

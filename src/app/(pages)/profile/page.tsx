@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaEnvelope,  FaGraduationCap, FaTrophy, FaEdit, FaCamera, FaBell, FaLightbulb } from 'react-icons/fa'
+import { FaEnvelope,  FaGraduationCap, FaTrophy, FaEdit, FaCamera, FaLightbulb } from 'react-icons/fa'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
@@ -133,7 +133,7 @@ export default function ProfilePage() {
                                   <h4 className="font-semibold">{course.title}</h4>
                                   <span className="text-sm">{course.progress}%</span>
                                 </div>
-                                <Progress value={course.progress} className="h-2 bg-teal-300" indicatorColor="bg-white" />
+                                <Progress value={course.progress} className="h-2 bg-teal-300"  />
                               </div>
                             </li>
                           ))}
@@ -192,10 +192,10 @@ export default function ProfilePage() {
                                 <h4 className="font-semibold">{course.title}</h4>
                                 <span className="text-sm">{course.progress}%</span>
                               </div>
-                              <Progress value={course.progress} className="h-2 bg-blue-300" indicatorColor="bg-white" />
+                              <Progress value={course.progress} className="h-2 bg-blue-200 " />
                             </div>
                             <div className="mt-2 flex justify-end">
-                              <Button variant="secondary" size="sm">Continuar</Button>
+                              <Button variant="secondary" className='shadow-xl font-bold border-2'>Continuar</Button>
                             </div>
                           </li>
                         ))}
@@ -249,7 +249,7 @@ export default function ProfilePage() {
                                 <h4 className="font-semibold">{skill.name}</h4>
                                 <span className="text-sm">{skill.level}%</span>
                               </div>
-                              <Progress value={skill.level} className="h-2 bg-teal-300"   indicatorColor="bg-white" />
+                              <Progress value={skill.level} className="h-2 bg-teal-300" />
                             </div>
                           </li>
                         ))}
